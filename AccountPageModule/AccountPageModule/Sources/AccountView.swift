@@ -10,10 +10,15 @@ import Core
 
 struct AccountView: View {
     @EnvironmentObject var userSession: UserSession
+    @Environment(\.dismiss) var dismiss
     let coordinator: AccountCoordinator
     
     var body: some View {
         VStack(spacing: 64) {
+            Button("Close") {
+                dismiss()
+            }
+            
             Button("Use paid feature") {
                 if userSession.currentUser?.isPro == true {
                     print("good!")

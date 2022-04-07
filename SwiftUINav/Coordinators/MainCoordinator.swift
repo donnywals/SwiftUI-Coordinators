@@ -8,15 +8,16 @@
 import SwiftUI
 import UIKit
 import AccountPageModule
+import AuthenticationModule
 import Core
 
 final class MainCoordinator {
     private let userSession: UserSession
-    private let navigationController: UINavigationController
+    private let rootViewController: UIViewController
     
-    init(userSession: UserSession, navigationController: UINavigationController) {
+    init(rootViewController: UIViewController, userSession: UserSession) {
         self.userSession = userSession
-        self.navigationController = navigationController
+        self.rootViewController = rootViewController
     }
     
     func launchHelp() {
@@ -24,9 +25,12 @@ final class MainCoordinator {
     }
     
     func launchAccountPage() {
-        let accountCoordinator = AccountCoordinator(navigationController: navigationController, userSession: userSession)
+        let accountCoordinator = AccountCoordinator(rootViewController: rootViewController, userSession: userSession)
         let accountPage = accountCoordinator.buildAccountView()
-        navigationController.pushViewController(accountPage, animated: true)
+        accountPage.modalTransitionStyle = .crossDissolve
+        accountPage.modalPresentationStyle = .fullScreen
+        
+        rootViewController.present(accountPage, animated: true)
     }
 }
 

@@ -14,13 +14,31 @@ struct MainView: View {
     
     var body: some View {
         VStack(spacing: 32) {
-            Button("Help") {
-                coordinator.launchHelp()
+            HStack {
+                Button("Open account") {
+                    coordinator.launchAccountPage()
+                }
+                
+                Spacer()
+                
+                Button("Help") {
+                    coordinator.launchHelp()
+                }
             }
             
-            Button("Open account") {
-                coordinator.launchAccountPage()
+            Spacer()
+            
+            HStack {
+                Button("Settings") {
+                    
+                }
+                
+                Spacer()
+                
+                Button("Browser") {
+                    
+                }
             }
-        }
+        }.padding()
     }
 }

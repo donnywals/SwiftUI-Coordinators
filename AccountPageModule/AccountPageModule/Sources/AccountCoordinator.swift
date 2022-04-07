@@ -13,13 +13,13 @@ import SwiftUI
 
 public final class AccountCoordinator {
     private let userSession: UserSession
-    private let navigationController: UINavigationController
+    private let rootViewController: UIViewController
     
-    public init(navigationController: UINavigationController = UINavigationController(),
+    public init(rootViewController: UIViewController,
          userSession: UserSession) {
         
         self.userSession = userSession
-        self.navigationController = navigationController
+        self.rootViewController = rootViewController
     }
     
     public func buildAccountView() -> UIViewController {
@@ -29,19 +29,19 @@ public final class AccountCoordinator {
         return UIHostingController(rootView: accountView)
     }
     
-    func launchAuthenticationFlow(presentingViewController: UIViewController? = nil) {
+    func launchAuthenticationFlow() {
         let authenticationCoordinator = AuthenticationCoordinator(
             userSession: userSession
         )
         
-        authenticationCoordinator.launch(using: presentingViewController ?? navigationController)
+        authenticationCoordinator.launch(using: rootViewController.presentedViewController ?? rootViewController)
     }
     
-    func launchPaywallFlow(presentingViewController: UIViewController? = nil) {
+    func launchPaywallFlow() {
         let paywallCoordinator = PaywallCoordinator(
             userSession: userSession
         )
         
-        paywallCoordinator.launch(using: navigationController)
+        paywallCoordinator.launch(using: rootViewController.presentedViewController ?? rootViewController)
     }
 }
