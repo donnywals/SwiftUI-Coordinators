@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:SwiftUINav.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PaywallModule/PaywallModule.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AuthenticationModule/AuthenticationModule.xcodeproj">
+   </FileRef>
+</Workspace>
