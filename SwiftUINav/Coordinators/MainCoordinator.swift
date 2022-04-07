@@ -7,20 +7,26 @@
 
 import SwiftUI
 import UIKit
+import AccountPageModule
+import Core
 
 final class MainCoordinator {
-    private let appCoordinator: AppCoordinator
+    private let userSession: UserSession
+    private let navigationController: UINavigationController
     
-    init(appCoordinator: AppCoordinator) {
-        self.appCoordinator = appCoordinator
-    }
-
-    func onAuthenticateTapped() {
-        appCoordinator.launchAuthenticationFlow()
+    init(userSession: UserSession, navigationController: UINavigationController) {
+        self.userSession = userSession
+        self.navigationController = navigationController
     }
     
-    func launchPaywall() {
-        appCoordinator.launchPaywallFlow()
+    func launchHelp() {
+        UIApplication.shared.open(URL(string: "https://donnywals.com")!)
+    }
+    
+    func launchAccountPage() {
+        let accountCoordinator = AccountCoordinator(navigationController: navigationController, userSession: userSession)
+        let accountPage = accountCoordinator.buildAccountView()
+        navigationController.pushViewController(accountPage, animated: true)
     }
 }
 

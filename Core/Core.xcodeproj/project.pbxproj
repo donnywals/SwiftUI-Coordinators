@@ -49,11 +49,19 @@
 		9774FA8527FEF09A00E58EDA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				9774FA9527FEF0B900E58EDA /* UserSession.swift */,
+				9774FB0027FF0D2800E58EDA /* Sources */,
 				9774FA8627FEF09A00E58EDA /* Core.h */,
 				9774FA8727FEF09A00E58EDA /* Core.docc */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		9774FB0027FF0D2800E58EDA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9774FA9527FEF0B900E58EDA /* UserSession.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

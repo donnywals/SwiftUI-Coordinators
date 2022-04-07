@@ -13,4 +13,7 @@
    <FileRef
       location = "group:AuthenticationModule/AuthenticationModule.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:AccountPageModule/AccountPageModule.xcodeproj">
+   </FileRef>
 </Workspace>

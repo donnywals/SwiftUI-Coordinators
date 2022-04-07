@@ -20,6 +20,8 @@
 		9774FAD427FEF39300E58EDA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAD327FEF39300E58EDA /* MainCoordinator.swift */; };
 		9774FAD627FEF3DD00E58EDA /* PaywallModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAD527FEF3DD00E58EDA /* PaywallModule.framework */; };
 		9774FAD727FEF3DD00E58EDA /* PaywallModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAD527FEF3DD00E58EDA /* PaywallModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9774FB0427FF10D800E58EDA /* AccountPageModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FB0327FF10D800E58EDA /* AccountPageModule.framework */; };
+		9774FB0527FF10D800E58EDA /* AccountPageModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FB0327FF10D800E58EDA /* AccountPageModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,7 @@
 				9774FA9B27FEF0E900E58EDA /* AuthenticationModule.framework in Embed Frameworks */,
 				9774FAD727FEF3DD00E58EDA /* PaywallModule.framework in Embed Frameworks */,
 				9774FA9D27FEF0E900E58EDA /* Core.framework in Embed Frameworks */,
+				9774FB0527FF10D800E58EDA /* AccountPageModule.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		9774FA9927FEF0E900E58EDA /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9774FAD327FEF39300E58EDA /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		9774FAD527FEF3DD00E58EDA /* PaywallModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaywallModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FB0327FF10D800E58EDA /* AccountPageModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AccountPageModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 				9774FA9A27FEF0E900E58EDA /* AuthenticationModule.framework in Frameworks */,
 				9774FAD627FEF3DD00E58EDA /* PaywallModule.framework in Frameworks */,
 				9774FA9C27FEF0E900E58EDA /* Core.framework in Frameworks */,
+				9774FB0427FF10D800E58EDA /* AccountPageModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,7 @@
 		9774FA9727FEF0E900E58EDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9774FB0327FF10D800E58EDA /* AccountPageModule.framework */,
 				9774FAD527FEF3DD00E58EDA /* PaywallModule.framework */,
 				9774FA9827FEF0E900E58EDA /* AuthenticationModule.framework */,
 				9774FA9927FEF0E900E58EDA /* Core.framework */,

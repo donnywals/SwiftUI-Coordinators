@@ -7,23 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9774FA7227FEF06400E58EDA /* AuthenticationModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9774FA7127FEF06400E58EDA /* AuthenticationModule.docc */; };
-		9774FA7327FEF06400E58EDA /* AuthenticationModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9774FA7027FEF06400E58EDA /* AuthenticationModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9774FAA027FEF17100E58EDA /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FA9F27FEF17100E58EDA /* AuthenticationCoordinator.swift */; };
-		9774FAA727FEF19300E58EDA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAA527FEF19300E58EDA /* LoginView.swift */; };
-		9774FAA827FEF19300E58EDA /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAA627FEF19300E58EDA /* SignUpView.swift */; };
-		9774FAAB27FEF1AF00E58EDA /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAAA27FEF1AF00E58EDA /* Core.framework */; };
-		9774FAAC27FEF1AF00E58EDA /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAAA27FEF1AF00E58EDA /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9774FAEA27FF09C500E58EDA /* AccountPageModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAE927FF09C500E58EDA /* AccountPageModule.docc */; };
+		9774FAEB27FF09C500E58EDA /* AccountPageModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 9774FAE827FF09C500E58EDA /* AccountPageModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9774FAF527FF09DE00E58EDA /* AuthenticationModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF227FF09DE00E58EDA /* AuthenticationModule.framework */; };
+		9774FAF627FF09DE00E58EDA /* AuthenticationModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF227FF09DE00E58EDA /* AuthenticationModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9774FAF727FF09DE00E58EDA /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF327FF09DE00E58EDA /* Core.framework */; };
+		9774FAF827FF09DE00E58EDA /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF327FF09DE00E58EDA /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9774FAF927FF09DE00E58EDA /* PaywallModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF427FF09DE00E58EDA /* PaywallModule.framework */; };
+		9774FAFA27FF09DE00E58EDA /* PaywallModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9774FAF427FF09DE00E58EDA /* PaywallModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9774FAFD27FF0D0E00E58EDA /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAFC27FF0D0E00E58EDA /* AccountView.swift */; };
+		9774FAFF27FF0D1B00E58EDA /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9774FAFE27FF0D1B00E58EDA /* AccountCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9774FAAD27FEF1AF00E58EDA /* Embed Frameworks */ = {
+		9774FAFB27FF09DE00E58EDA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9774FAAC27FEF1AF00E58EDA /* Core.framework in Embed Frameworks */,
+				9774FAF627FF09DE00E58EDA /* AuthenticationModule.framework in Embed Frameworks */,
+				9774FAFA27FF09DE00E58EDA /* PaywallModule.framework in Embed Frameworks */,
+				9774FAF827FF09DE00E58EDA /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,68 +36,72 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9774FA6D27FEF06400E58EDA /* AuthenticationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthenticationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9774FA7027FEF06400E58EDA /* AuthenticationModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenticationModule.h; sourceTree = "<group>"; };
-		9774FA7127FEF06400E58EDA /* AuthenticationModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AuthenticationModule.docc; sourceTree = "<group>"; };
-		9774FA9F27FEF17100E58EDA /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
-		9774FAA527FEF19300E58EDA /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		9774FAA627FEF19300E58EDA /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		9774FAAA27FEF1AF00E58EDA /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FAE527FF09C500E58EDA /* AccountPageModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountPageModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FAE827FF09C500E58EDA /* AccountPageModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountPageModule.h; sourceTree = "<group>"; };
+		9774FAE927FF09C500E58EDA /* AccountPageModule.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AccountPageModule.docc; sourceTree = "<group>"; };
+		9774FAF227FF09DE00E58EDA /* AuthenticationModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthenticationModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FAF327FF09DE00E58EDA /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FAF427FF09DE00E58EDA /* PaywallModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PaywallModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9774FAFC27FF0D0E00E58EDA /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		9774FAFE27FF0D1B00E58EDA /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9774FA6A27FEF06400E58EDA /* Frameworks */ = {
+		9774FAE227FF09C500E58EDA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9774FAAB27FEF1AF00E58EDA /* Core.framework in Frameworks */,
+				9774FAF527FF09DE00E58EDA /* AuthenticationModule.framework in Frameworks */,
+				9774FAF927FF09DE00E58EDA /* PaywallModule.framework in Frameworks */,
+				9774FAF727FF09DE00E58EDA /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9774FA6327FEF06400E58EDA = {
+		9774FADB27FF09C500E58EDA = {
 			isa = PBXGroup;
 			children = (
-				9774FA6F27FEF06400E58EDA /* AuthenticationModule */,
-				9774FA6E27FEF06400E58EDA /* Products */,
-				9774FAA927FEF1AF00E58EDA /* Frameworks */,
+				9774FAE727FF09C500E58EDA /* AccountPageModule */,
+				9774FAE627FF09C500E58EDA /* Products */,
+				9774FAF127FF09DE00E58EDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9774FA6E27FEF06400E58EDA /* Products */ = {
+		9774FAE627FF09C500E58EDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9774FA6D27FEF06400E58EDA /* AuthenticationModule.framework */,
+				9774FAE527FF09C500E58EDA /* AccountPageModule.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9774FA6F27FEF06400E58EDA /* AuthenticationModule */ = {
+		9774FAE727FF09C500E58EDA /* AccountPageModule */ = {
 			isa = PBXGroup;
 			children = (
-				9774FB0127FF0D3200E58EDA /* Sources */,
-				9774FA7027FEF06400E58EDA /* AuthenticationModule.h */,
-				9774FA7127FEF06400E58EDA /* AuthenticationModule.docc */,
+				9774FB0227FF0D3B00E58EDA /* Sources */,
+				9774FAE827FF09C500E58EDA /* AccountPageModule.h */,
+				9774FAE927FF09C500E58EDA /* AccountPageModule.docc */,
 			);
-			path = AuthenticationModule;
+			path = AccountPageModule;
 			sourceTree = "<group>";
 		};
-		9774FAA927FEF1AF00E58EDA /* Frameworks */ = {
+		9774FAF127FF09DE00E58EDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9774FAAA27FEF1AF00E58EDA /* Core.framework */,
+				9774FAF227FF09DE00E58EDA /* AuthenticationModule.framework */,
+				9774FAF327FF09DE00E58EDA /* Core.framework */,
+				9774FAF427FF09DE00E58EDA /* PaywallModule.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9774FB0127FF0D3200E58EDA /* Sources */ = {
+		9774FB0227FF0D3B00E58EDA /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9774FAA527FEF19300E58EDA /* LoginView.swift */,
-				9774FAA627FEF19300E58EDA /* SignUpView.swift */,
-				9774FA9F27FEF17100E58EDA /* AuthenticationCoordinator.swift */,
+				9774FAFC27FF0D0E00E58EDA /* AccountView.swift */,
+				9774FAFE27FF0D1B00E58EDA /* AccountCoordinator.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -100,51 +109,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9774FA6827FEF06400E58EDA /* Headers */ = {
+		9774FAE027FF09C500E58EDA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9774FA7327FEF06400E58EDA /* AuthenticationModule.h in Headers */,
+				9774FAEB27FF09C500E58EDA /* AccountPageModule.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		9774FA6C27FEF06400E58EDA /* AuthenticationModule */ = {
+		9774FAE427FF09C500E58EDA /* AccountPageModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9774FA7627FEF06400E58EDA /* Build configuration list for PBXNativeTarget "AuthenticationModule" */;
+			buildConfigurationList = 9774FAEE27FF09C500E58EDA /* Build configuration list for PBXNativeTarget "AccountPageModule" */;
 			buildPhases = (
-				9774FA6827FEF06400E58EDA /* Headers */,
-				9774FA6927FEF06400E58EDA /* Sources */,
-				9774FA6A27FEF06400E58EDA /* Frameworks */,
-				9774FA6B27FEF06400E58EDA /* Resources */,
-				9774FAAD27FEF1AF00E58EDA /* Embed Frameworks */,
+				9774FAE027FF09C500E58EDA /* Headers */,
+				9774FAE127FF09C500E58EDA /* Sources */,
+				9774FAE227FF09C500E58EDA /* Frameworks */,
+				9774FAE327FF09C500E58EDA /* Resources */,
+				9774FAFB27FF09DE00E58EDA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = AuthenticationModule;
-			productName = AuthenticationModule;
-			productReference = 9774FA6D27FEF06400E58EDA /* AuthenticationModule.framework */;
+			name = AccountPageModule;
+			productName = AccountPageModule;
+			productReference = 9774FAE527FF09C500E58EDA /* AccountPageModule.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9774FA6427FEF06400E58EDA /* Project object */ = {
+		9774FADC27FF09C500E58EDA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					9774FA6C27FEF06400E58EDA = {
+					9774FAE427FF09C500E58EDA = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 9774FA6727FEF06400E58EDA /* Build configuration list for PBXProject "AuthenticationModule" */;
+			buildConfigurationList = 9774FADF27FF09C500E58EDA /* Build configuration list for PBXProject "AccountPageModule" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -152,18 +161,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 9774FA6327FEF06400E58EDA;
-			productRefGroup = 9774FA6E27FEF06400E58EDA /* Products */;
+			mainGroup = 9774FADB27FF09C500E58EDA;
+			productRefGroup = 9774FAE627FF09C500E58EDA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9774FA6C27FEF06400E58EDA /* AuthenticationModule */,
+				9774FAE427FF09C500E58EDA /* AccountPageModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9774FA6B27FEF06400E58EDA /* Resources */ = {
+		9774FAE327FF09C500E58EDA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -173,21 +182,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9774FA6927FEF06400E58EDA /* Sources */ = {
+		9774FAE127FF09C500E58EDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9774FAA827FEF19300E58EDA /* SignUpView.swift in Sources */,
-				9774FAA727FEF19300E58EDA /* LoginView.swift in Sources */,
-				9774FAA027FEF17100E58EDA /* AuthenticationCoordinator.swift in Sources */,
-				9774FA7227FEF06400E58EDA /* AuthenticationModule.docc in Sources */,
+				9774FAFD27FF0D0E00E58EDA /* AccountView.swift in Sources */,
+				9774FAEA27FF09C500E58EDA /* AccountPageModule.docc in Sources */,
+				9774FAFF27FF0D1B00E58EDA /* AccountCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9774FA7427FEF06400E58EDA /* Debug */ = {
+		9774FAEC27FF09C500E58EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -250,7 +258,7 @@
 			};
 			name = Debug;
 		};
-		9774FA7527FEF06400E58EDA /* Release */ = {
+		9774FAED27FF09C500E58EDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -307,7 +315,7 @@
 			};
 			name = Release;
 		};
-		9774FA7727FEF06400E58EDA /* Debug */ = {
+		9774FAEF27FF09C500E58EDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -326,7 +334,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.AuthenticationModule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.AccountPageModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -335,7 +343,7 @@
 			};
 			name = Debug;
 		};
-		9774FA7827FEF06400E58EDA /* Release */ = {
+		9774FAF027FF09C500E58EDA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -354,7 +362,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.AuthenticationModule;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donnywals.AccountPageModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -366,25 +374,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9774FA6727FEF06400E58EDA /* Build configuration list for PBXProject "AuthenticationModule" */ = {
+		9774FADF27FF09C500E58EDA /* Build configuration list for PBXProject "AccountPageModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9774FA7427FEF06400E58EDA /* Debug */,
-				9774FA7527FEF06400E58EDA /* Release */,
+				9774FAEC27FF09C500E58EDA /* Debug */,
+				9774FAED27FF09C500E58EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9774FA7627FEF06400E58EDA /* Build configuration list for PBXNativeTarget "AuthenticationModule" */ = {
+		9774FAEE27FF09C500E58EDA /* Build configuration list for PBXNativeTarget "AccountPageModule" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9774FA7727FEF06400E58EDA /* Debug */,
-				9774FA7827FEF06400E58EDA /* Release */,
+				9774FAEF27FF09C500E58EDA /* Debug */,
+				9774FAF027FF09C500E58EDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9774FA6427FEF06400E58EDA /* Project object */;
+	rootObject = 9774FADC27FF09C500E58EDA /* Project object */;
 }

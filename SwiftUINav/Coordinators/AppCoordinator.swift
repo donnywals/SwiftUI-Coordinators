@@ -26,26 +26,10 @@ final class AppCoordinator {
             return
         }
 
-        let mainCoordinator = MainCoordinator(appCoordinator: self)
+        let mainCoordinator = MainCoordinator(userSession: userSession, navigationController: navigationController)
         let mainView = MainView(coordinator: mainCoordinator)
             .environmentObject(userSession)
         
         navigationController.viewControllers = [UIHostingController(rootView: mainView)]
-    }
-    
-    func launchAuthenticationFlow(presentingViewController: UIViewController? = nil) {
-        let authenticationCoordinator = AuthenticationCoordinator(
-            userSession: userSession
-        )
-        
-        authenticationCoordinator.launch(using: presentingViewController ?? navigationController)
-    }
-    
-    func launchPaywallFlow(presentingViewController: UIViewController? = nil) {
-        let paywallCoordinator = PaywallCoordinator(
-            userSession: userSession
-        )
-
-        paywallCoordinator.launch(using: navigationController)
     }
 }
